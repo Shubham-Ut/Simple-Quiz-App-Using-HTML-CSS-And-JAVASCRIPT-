@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      background-color: rgb(120, 194, 255);
+    }
+    .card1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+    .card11 {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 50px;
+    }
+    .question {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .card11 {
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+      width: 500px;
+      border-bottom: 2px solid #1a1a1a;
+    }
+    .questions {
+      background-color: #ffffff;
+      padding: 20px;
+      width: 500px;
+    }
+    .card2 {
+      margin-left: 0px;
+      background-color: rgb(92, 92, 244);
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      border-radius: 15px;
+      align-items:center;
+      color: #ffffff;
+    }
+    .card3 {
+      background-color: rgb(0, 0, 0);
+      padding: 5px;
+      color: #ffffff;
+      border-radius: 10px;
+      
+    }
+    .p1{
+      display: flex;
+      align-items: center;
+      font-weight: bolder;
+      font-size: x-large;
+
+    }
+    button {
+      justify-content: center;
+      width: 49%;
+      padding: 8px;
+      border: none;
+      background-color: #afd4ff;
+      border-radius: 25px;
+
+    }
+    .but {
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      
+    }
+    label {
+      margin: 5px;
+      padding: 5px;
+      border-radius: 15px;
+    }
+    label:hover {
+      background-color: rgb(114, 147, 255);
+      
+    }
+    button:hover {
+      background-color: rgb(109, 160, 255);
+    }
+   
+  </style>
+</head>
+<body>
+   <div class="card1">
+    <div class="card11">
+      <p1 class="p1">Web Dev Quiz</p1>
+      <div class="card2">
+        <p2>Total Questions</p2>
+      <div class="card3">
+        <p3>05</p3>
+      </div>
+      </div>
+    </div>
+      <div class="questions">
+      <form id="quiz-form">
+      <div class="question" id="q1-container">
+        <p>1. What does HTML stand for?</p>
+        <label><input type="radio" name="q1" value="a" /> Hyper Text Markup Language</label>
+        <label><input type="radio" name="q1" value="b" /> Home Tool Markup Language</label>
+        <label><input type="radio" name="q1" value="c" /> Hyperlinks and Text Markup Language</label>
+        <p class="correct-answer" id="q1-answer"></p>
+      </div>
+
+      <div class="question" id="q2-container">
+        <p>2. Which CSS property is used to change the text color?</p>
+        <label><input type="radio" name="q2" value="a" /> background-color</label>
+        <label><input type="radio" name="q2" value="b" /> color</label>
+        <label><input type="radio" name="q2" value="c" /> font-color</label>
+        <p class="correct-answer" id="q2-answer"></p>
+      </div>
+
+      <div class="question" id="q3-container">
+        <p>3. What does JS stand for?</p>
+        <label><input type="radio" name="q3" value="a" /> Java Source</label>
+        <label><input type="radio" name="q3" value="b" /> JavaScript</label>
+        <label><input type="radio" name="q3" value="c" /> Just Script</label>
+        <p class="correct-answer" id="q3-answer"></p>
+      </div>
+      <div class="question" id="q4-container">
+        <p>4. What is the full form of CPU?</p>
+        <label><input type="radio" name="q4" value="a" /> Central Processing Unit</label>
+        <label><input type="radio" name="q4" value="b" /> Computer Processing Unit</label>
+        <label><input type="radio" name="q4" value="c" /> Central Programming Unit</label>
+        <p class="correct-answer" id="q4-answer"></p>
+      </div>
+      <div class="question" id="q5-container">
+        <p>5. Which tag is used to create a hyperlink in HTML?</p>
+        <label><input type="radio" name="q5" value="a" /> link </label>
+        <label><input type="radio" name="q5" value="b" /> a</label>
+        <label><input type="radio" name="q5" value="c" /> url</label>
+        <p class="correct-answer" id="q5-answer"></p>
+      </div>
+      <div class="but">
+      <button type="submit" id="submit-btn">Submit</button>
+      <button type="reset" id="restart-btn" >Restart</button>
+      </div>
+    </form>
+      </div>
+   </div>
+   <div class="result" id="result"></div>
+  </div>
+
+  <script src="backend.js"></script>
+  
+</body>
+</html>
